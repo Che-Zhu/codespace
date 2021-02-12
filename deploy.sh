@@ -6,5 +6,5 @@ npm run docs:build
 
 git pull
 git add -A
-git commit -m 'structural change'
+git commit -m 'missing_semester shell update'
 git push -u origin main
