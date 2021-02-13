@@ -7,20 +7,40 @@ The terminal *prompt*  often looks like this:
 
 It tells you where you currently are, which is `~` (short for "home"). The `$` tells you that you are not the root user, and `#` indicates you are the root user.
 
-We can switch to root user by using the command `sudo su`:
+We can switch to root user by using the command `sudo su`, it lets you "do" something "as su: (short for "super user", or "root").
 
-`root@che-ubuntu:/home/che/Desktop#`
-
-and command `exit` can be used to quit root privilige
+and command `exit` can be used to quit root privilige.
 
 ---
+Suppose we have a file `brightness` that need to be in `root` in order to do writing, you may think the following code will work but it will not:
 
+``` bash
+sudo echo 3 > brightness
+An error occurred while redirecting file 'brightness'
+open: Permission denied
+```
+
+The correct code should be:
+```bash
+echo 3 > sudo brightness
+```
+
+::: tip
+In this case, the *shell* is authenticated as user and tries to open the brightness file for writing before setting that as `sudo echo`'s output, but is prevented from doing so since the shell does not run as `root`.
+:::
+
+::: tip Important to know
+Operations like `|`, `>` and `<` are done by the shell, not by the individual program. These individual programs just read from their input and write to their output, whatever it may be
+:::
+
+---
 We can execute a command with *arguments*:
 
 ``` bash
 che@che-ubuntu:~/Desktop$ echo hello
 hello
 ```
+
 The shell parses the command by splitting it by whitespace, and then runs the program indicated by the first word, supplying each subsequent word as an argument that the program can access.
 
 ::: tip
@@ -80,4 +100,13 @@ hello
 ```
 In the second last command, the content of `hello.txt` is first passed to `cat`, and then pushed to `hello2.txt`.
 
-You can alos use `>>` to append to a file. Where this kind of input/output redirection really shines is in the use of *pipes*. The `|\ operator lets you "chain" programs such that the output of one is the input of another:
+You can alos use `>>` to append to a file. Where this kind of input/output redirection really shines is in the use of *pipes*. The `|` operator lets you "chain" programs such that the output of one is the input of another:
+
+``` bash
+che@che-ubuntu:~/Desktop$ ls -l
+total 43876
+drwxrwxr-x 5 che che     4096 2月  12 15:51 codespace
+-rwxrwxr-x 1 che che 44922808 2月   5 01:11 Panda5.0.3.AppImage
+che@che-ubuntu:~/Desktop$ ls -l | tail -n1
+-rwxrwxr-x 1 che che 44922808 2月   5 01:11 Panda5.0.3.AppImage
+```
