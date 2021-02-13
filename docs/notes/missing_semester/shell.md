@@ -110,3 +110,97 @@ drwxrwxr-x 5 che che     4096 2月  12 15:51 codespace
 che@che-ubuntu:~/Desktop$ ls -l | tail -n1
 -rwxrwxr-x 1 che che 44922808 2月   5 01:11 Panda5.0.3.AppImage
 ```
+
+## Exercises answers 
+1. Making sure we are running an appropriate shell
+
+``` bash
+che@che-ubuntu:/$ echo $SHELL
+/bin/bash
+```
+
+2. Create a new directory called `missing` under `/tmp`
+
+``` bash
+che@che-ubuntu:/$ cd tmp && mkdir missing
+```
+
+3. Look up the `touch` program (`man touch`)
+
+4. Use `touch` to create a new file called `semester` in `missing`
+
+``` bash
+che@che-ubuntu:/tmp$ cd missing/ && touch semester
+```
+
+5. Write the following into that file, one at a time:
+
+::: details
+#!/bin/sh
+curl --head --silent https://missing.csail.mit.edu
+:::
+
+``` bash
+che@che-ubuntu:/tmp/missing$ echo '#!/bin/sh' > semester
+che@che-ubuntu:/tmp/missing$ echo 'curl --head --silent https://missing.csail.mit.edu' >> semester
+```
+
+::: tip
+`#` starts a comment in Bash, and `!` has a special meaning even within double-quoted strings. Bash treats single-quoted strings (`'`) differently: [Bash quoting](https://www.gnu.org/software/bash/manual/html_node/Quoting.html)
+:::
+
+6. Try to execute the file by using script `./semester`
+
+``` bash
+che@che-ubuntu:/tmp/missing$ echo '#!/bin/sh' > semester
+che@che-ubuntu:/tmp/missing$ echo 'curl --head --silent https://missing.csail.mit.edu' >> semester
+che@che-ubuntu:/tmp/missing$ ls -l
+total 4
+-rw-rw-r-- 1 che che 61 2月  13 17:44 semester
+
+```
+It does not work because we are trying to execute this file without `x` (execute) permission, and the user `che` have only `r` (read) and `w` (write) permissions according to `ls -l` command output.
+
+7. Run the command by explicitly starting the `sh` interpreter, and giving it the file `semester` as the first argument.
+
+``` bash
+che@che-ubuntu:/tmp/missing$ sh semester
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+server: GitHub.com
+last-modified: Thu, 11 Feb 2021 04:30:47 GMT
+access-control-allow-origin: *
+etag: "6024b2f7-1f31"
+expires: Fri, 12 Feb 2021 15:23:44 GMT
+cache-control: max-age=600
+x-proxy-cache: MISS
+x-github-request-id: A9EE:47A3:AC1A7:B4619:60269B21
+accept-ranges: bytes
+date: Sat, 13 Feb 2021 10:00:21 GMT
+via: 1.1 varnish
+age: 0
+x-served-by: cache-tyo11929-TYO
+x-cache: HIT
+x-cache-hits: 1
+x-timer: S1613210422.579820,VS0,VE181
+vary: Accept-Encoding
+x-fastly-request-id: 0cd46721fae068c29f4e5cc8b8c4ab71c914d07f
+content-length: 7985
+```
+
+It works because we are not executing the file `semester`directly. Instead we use the Bash interpreter to execute the file.
+
+8. Look up the `chmod` program using `man chmod`
+
+9. Use `chmod` to make it possible to run the command `./semester` rather than having to type `sh semester`.
+
+``` bash
+che@che-ubuntu:/tmp/missing$ 
+```
+
+::: tip
+How does shell know that the file is supposed to be interpreted using `sh`? [shebang](en.m.wikipedia.org/wiki/Shebang_(Unix))
+:::
+
+10. Use `|` and `>` to write the "last modified" date output by `semester ` into a file called `last-modified.txt` in your home directory.
+
