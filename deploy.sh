@@ -6,5 +6,5 @@ npm run docs:build
 
 git pull
 git add -A
-git commit -m 'missing_semester shell update'
+git commit -m 'fixed link error'
 git push -u origin main
