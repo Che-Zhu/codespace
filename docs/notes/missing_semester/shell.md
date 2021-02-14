@@ -195,7 +195,7 @@ It works because we are not executing the file `semester`directly. Instead we us
 9. Use `chmod` to make it possible to run the command `./semester` rather than having to type `sh semester`.
 
 ``` bash
-che@che-ubuntu:/tmp/missing$ 
+che@che-ubuntu:/tmp/missing$ chmod 700 semester
 ```
 
 ::: tip

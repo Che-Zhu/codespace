@@ -8,7 +8,7 @@
     <link rel="icon" href="/codespace/site_logo.jpg">
     <meta name="description" content="Just some notes">
     
-    <link rel="preload" href="/codespace/assets/css/0.styles.80f1c719.css" as="style"><link rel="preload" href="/codespace/assets/js/app.45c81f55.js" as="script"><link rel="preload" href="/codespace/assets/js/2.3424eb4e.js" as="script"><link rel="preload" href="/codespace/assets/js/9.0e321ff1.js" as="script"><link rel="prefetch" href="/codespace/assets/js/10.af635221.js"><link rel="prefetch" href="/codespace/assets/js/3.9f41a7be.js"><link rel="prefetch" href="/codespace/assets/js/4.c1d52a96.js"><link rel="prefetch" href="/codespace/assets/js/5.4b2f586c.js"><link rel="prefetch" href="/codespace/assets/js/6.36d4639b.js"><link rel="prefetch" href="/codespace/assets/js/7.0502a6ef.js"><link rel="prefetch" href="/codespace/assets/js/8.5a000c61.js">
+    <link rel="preload" href="/codespace/assets/css/0.styles.80f1c719.css" as="style"><link rel="preload" href="/codespace/assets/js/app.b36c72ad.js" as="script"><link rel="preload" href="/codespace/assets/js/2.3424eb4e.js" as="script"><link rel="preload" href="/codespace/assets/js/9.4d99a58c.js" as="script"><link rel="prefetch" href="/codespace/assets/js/10.af635221.js"><link rel="prefetch" href="/codespace/assets/js/3.9f41a7be.js"><link rel="prefetch" href="/codespace/assets/js/4.c1d52a96.js"><link rel="prefetch" href="/codespace/assets/js/5.4b2f586c.js"><link rel="prefetch" href="/codespace/assets/js/6.36d4639b.js"><link rel="prefetch" href="/codespace/assets/js/7.8436c0b9.js"><link rel="prefetch" href="/codespace/assets/js/8.c571fda8.js">
     <link rel="stylesheet" href="/codespace/assets/css/0.styles.80f1c719.css">
   </head>
   <body>
@@ -92,12 +92,12 @@ x-timer: S1613210422.579820,VS0,VE181
 vary: Accept-Encoding
 x-fastly-request-id: 0cd46721fae068c29f4e5cc8b8c4ab71c914d07f
 content-length: <span class="token number">7985</span>
-</code></pre></div><p>It works because we are not executing the file <code>semester</code>directly. Instead we use the Bash interpreter to execute the file.</p> <ol start="8"><li><p>Look up the <code>chmod</code> program using <code>man chmod</code></p></li> <li><p>Use <code>chmod</code> to make it possible to run the command <code>./semester</code> rather than having to type <code>sh semester</code>.</p></li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>che@che-ubuntu:/tmp/missing$ 
+</code></pre></div><p>It works because we are not executing the file <code>semester</code>directly. Instead we use the Bash interpreter to execute the file.</p> <ol start="8"><li><p>Look up the <code>chmod</code> program using <code>man chmod</code></p></li> <li><p>Use <code>chmod</code> to make it possible to run the command <code>./semester</code> rather than having to type <code>sh semester</code>.</p></li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>che@che-ubuntu:/tmp/missing$ <span class="token function">chmod</span> <span class="token number">700</span> semester
 </code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>How does shell know that the file is supposed to be interpreted using <code>sh</code>? <a href="en.m.wikipedia.org/wiki/Shebang_(Unix)">shebang</a></p></div> <ol start="10"><li>Use <code>|</code> and <code>&gt;</code> to write the &quot;last modified&quot; date output by <code>semester</code> into a file called <code>last-modified.txt</code> in your home directory.</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/codespace/notes/missing_semester/overview.html" class="prev">
         Overview
       </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/codespace/assets/js/app.45c81f55.js" defer></script><script src="/codespace/assets/js/2.3424eb4e.js" defer></script><script src="/codespace/assets/js/9.0e321ff1.js" defer></script>
+    <script src="/codespace/assets/js/app.b36c72ad.js" defer></script><script src="/codespace/assets/js/2.3424eb4e.js" defer></script><script src="/codespace/assets/js/9.4d99a58c.js" defer></script>
   </body>
 </html>
