@@ -6,5 +6,5 @@ npm run docs:build
 
 git pull
 git add -A
-git commit -m 'missing semester shell update'
+git commit -m 'Machine Learning overview'
 git push -u origin main

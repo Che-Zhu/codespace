@@ -21,16 +21,28 @@ module.exports = {
       {text: 'Github', link: 'https://github.com/Che-Zhu/codespace'},
     ],
 
+
+
     sidebar: [
       {
         title: 'The missing semester',
         collapsable: true,
+        path: '/notes/missing_semester/info',
         sidebarDepth: 1,
         children: [
-          '/notes/missing_semester/overview',
+          
           '/notes/missing_semester/shell',
         ]
       },
+
+      {
+        title: 'Coursera Machine Learning',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          'notes/coursera_machine_learning/overview',
+        ]
+      }
     ]
   }
 }
