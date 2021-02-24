@@ -6,5 +6,5 @@ npm run docs:build
 
 git pull
 git add -A
-git commit -m 'Machine Learning overview'
+git commit -m 'numpy update'
 git push -u origin main

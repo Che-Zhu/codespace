@@ -79,7 +79,7 @@ drwxrwxr-x 801 che che  32768 2月  12 15:53 node_modules
 -rw-rw-r--   1 che che    578 2月  12 15:51 package.json
 -rw-rw-r--   1 che che 427564 2月  12 15:51 package-lock.json
 ```
-The above output gives us a bunch more information about each file or directory present. First, the `d` at the beginning of the second line tells us that `docs` is a directory. 
+The above output gives us a bunch more information about each file or directory present. The `d` at the beginning of the second line tells us that `docs` is a directory. 
 
 The follow three groups of three characters (`rwx`) indicate what permissions the owner of the file (first `che`), the owning group (second `che`), and everyone else respectively have on the relevant item. A `-` indicates that the given principal does not have the given permission. 
 
