@@ -12,5 +12,5 @@ features:
   details: 
 - title: Last updated
   details: 24/2/2021
-footer: CC0-1.0 Licensed | Copyright © 2021-present Che
+footer: Copyright © 2021-present Che
 ---
