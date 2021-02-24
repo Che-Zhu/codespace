@@ -7,10 +7,10 @@ actionText: Go →
 actionLink: /notes/test.md
 features:
 - title: Currently working on
-  details: The Missing Semester of Your CS Education
+  details: The Missing Semester of Your CS Education, Python related topic
 - title: Up next
-  details: Python related topic
+  details: 
 - title: Last updated
-  details: 17/2/2021
+  details: 24/2/2021
 footer: CC0-1.0 Licensed | Copyright © 2021-present Che
 ---

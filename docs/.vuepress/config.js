@@ -42,6 +42,15 @@ module.exports = {
         children: [
           'notes/coursera_machine_learning/overview',
         ]
+      },
+
+      {
+        title: 'Python',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          'notes/python/numpy',
+        ]
       }
     ]
   }
