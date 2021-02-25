@@ -6,5 +6,5 @@ npm run docs:build
 
 git pull
 git add -A
-git commit -m 'numpy update'
+git commit -m 'numpy draft'
 git push -u origin main

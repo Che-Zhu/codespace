@@ -45,11 +45,12 @@ module.exports = {
       },
 
       {
-        title: 'Python',
+        title: 'Numpy',
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          'notes/python/numpy',
+          'notes/numpy/numpy',
+          'notes/numpy/statistic'
         ]
       }
     ]
