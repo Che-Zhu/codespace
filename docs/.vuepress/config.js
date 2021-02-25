@@ -10,6 +10,7 @@ module.exports = {
 
   themeConfig: {
     logo: "/site_logo.jpg",
+    smoothScroll: true,
 
     nav: [
       {text: 'Contact me', 
@@ -18,7 +19,6 @@ module.exports = {
           {text: 'Github Profile', link: 'https://github.com/Che-Zhu'},
         ]
       },
-      {text: 'Github', link: 'https://github.com/Che-Zhu/codespace'},
     ],
 
 
@@ -53,6 +53,16 @@ module.exports = {
           'notes/numpy/statistic'
         ]
       }
-    ]
+    ],
+
+
+    // page condig
+    lastUpdated: 'Last Updated',
+    repo: 'https://github.com/Che-Zhu/codespace',
+    repoLabel: 'Github',
+    docsDir: 'docs',
+    docsBranch: 'main',
+    editLinks: true,
+    editLinkText: 'I found an issue on this page',
   }
 }
