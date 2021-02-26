@@ -6,5 +6,5 @@ npm run docs:build
 
 git pull
 git add -A
-git commit -m 'framework update'
+git commit -m 'testing picgo'
 git push -u origin main

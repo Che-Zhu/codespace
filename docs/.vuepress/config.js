@@ -27,20 +27,31 @@ module.exports = {
       {
         title: 'The missing semester',
         collapsable: true,
-        path: '/notes/missing_semester/info',
+        path: '/notes/01.missing_semester/00.info',
         sidebarDepth: 1,
         children: [
-          
-          '/notes/missing_semester/shell',
+          '/notes/01.missing_semester/01.shell',
         ]
       },
 
+
       {
-        title: 'Coursera Machine Learning',
+        title: 'Matplotlib',
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          'notes/coursera_machine_learning/overview',
+          '/notes/02.matplotlib/01.overview',
+        ]
+      },
+
+
+      {
+        title: 'Machine Learning',
+        collapsable: true,
+        path: '/notes/machine_learning/00.info',
+        sidebarDepth: 1,
+        children: [
+          'notes/machine_learning/01.overview',
         ]
       },
 
