@@ -11,6 +11,6 @@ features:
 - title: Up next
   details: The Missing Semester of Your CS Education
 - title: Last updated
-  details: 26/2/2021
+  details: 27/2/2021
 footer: Copyright © 2021-present Che
 ---

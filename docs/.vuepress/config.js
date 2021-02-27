@@ -40,7 +40,18 @@ module.exports = {
         collapsable: true,
         sidebarDepth: 1,
         children: [
-          '/notes/02.matplotlib/01.overview',
+          '/notes/03.matplotlib/01.overview',
+        ]
+      },
+
+
+      {
+        title: 'Numpy',
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          'notes/04.numpy/numpy',
+          'notes/04.numpy/statistic'
         ]
       },
 
@@ -48,22 +59,14 @@ module.exports = {
       {
         title: 'Machine Learning',
         collapsable: true,
-        path: '/notes/machine_learning/00.info',
+        path: '/notes/06.machine_learning/00.info',
         sidebarDepth: 1,
         children: [
-          'notes/machine_learning/01.overview',
+          'notes/06.machine_learning/01.overview',
         ]
       },
 
-      {
-        title: 'Numpy',
-        collapsable: true,
-        sidebarDepth: 1,
-        children: [
-          'notes/numpy/numpy',
-          'notes/numpy/statistic'
-        ]
-      }
+
     ],
 
 
