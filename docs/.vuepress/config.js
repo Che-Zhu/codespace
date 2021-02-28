@@ -41,6 +41,7 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           '/notes/03.matplotlib/01.overview',
+          '/notes/03.matplotlib/02.basic_functionalities.md',
         ]
       },
 
@@ -57,7 +58,7 @@ module.exports = {
 
 
       {
-        title: 'Machine Learning',
+        title: '🙀Machine Learning',
         collapsable: true,
         path: '/notes/06.machine_learning/00.info',
         sidebarDepth: 1,
