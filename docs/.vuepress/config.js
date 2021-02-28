@@ -1,5 +1,4 @@
 module.exports = {
-  base: '/codespace/',
 
   head: [
     ['link', { rel: 'icon', href: '/site_logo.jpg' }],
