@@ -37,6 +37,7 @@ module.exports = {
       {
         title: 'Matplotlib',
         collapsable: true,
+        path: '/notes/03.matplotlib/00.info',
         sidebarDepth: 1,
         children: [
           '/notes/03.matplotlib/01.overview',
