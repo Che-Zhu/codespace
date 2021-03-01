@@ -2,7 +2,7 @@
 home: true
 heroImage: site_logo.jpg
 heroText: CodeSpace
-tagline: Just some notes
+tagline: 行百里者半于九十
 actionText: Go →
 actionLink: /notes/home
 features:

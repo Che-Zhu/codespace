@@ -41,6 +41,8 @@ module.exports = {
         children: [
           '/notes/03.matplotlib/01.overview',
           '/notes/03.matplotlib/02.basic_functionalities.md',
+          '/notes/03.matplotlib/03.steps.md',
+          '/notes/03.matplotlib/04.types_of_plot.md',
         ]
       },
 
@@ -48,6 +50,7 @@ module.exports = {
       {
         title: 'Numpy',
         collapsable: true,
+        path: '/notes/04.numpy/00.info',
         sidebarDepth: 1,
         children: [
           'notes/04.numpy/numpy',
@@ -77,6 +80,6 @@ module.exports = {
     docsDir: 'docs',
     docsBranch: 'main',
     editLinks: true,
-    editLinkText: 'I found an issue on this page',
+    editLinkText: 'Help me to improve this page',
   }
 }
