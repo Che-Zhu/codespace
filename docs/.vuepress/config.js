@@ -54,8 +54,20 @@ module.exports = {
         path: '/notes/04.numpy/00.info',
         sidebarDepth: 1,
         children: [
+          '/notes/04.numpy/01.ndarray_properties',
           'notes/04.numpy/numpy',
           'notes/04.numpy/statistic'
+        ]
+      },
+
+
+      {
+        title: 'Pandas',
+        collapsable: true,
+        path: '/notes/05.pandas/00.info',
+        sidebarDepth: 1,
+        children: [
+
         ]
       },
 
