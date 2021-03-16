@@ -79,6 +79,8 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           'notes/06.machine_learning/01.overview',
+          'notes/06.machine_learning/02.workflow',
+          'notes/06.machine_learning/03.linear_model.md',
         ]
       },
 
@@ -86,7 +88,7 @@ module.exports = {
     ],
 
 
-    // page condig
+    // page config
     lastUpdated: 'Last Updated',
     repo: 'https://github.com/Che-Zhu/codespace',
     repoLabel: 'Github',
