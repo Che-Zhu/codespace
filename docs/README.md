@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: site_logo.jpg
-heroText: CodeSpace
+heroText: NoteSpace
 tagline: There is always a longer way to go
 actionText: Go →
 actionLink: /notes/home

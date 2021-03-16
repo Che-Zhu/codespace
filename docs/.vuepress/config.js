@@ -4,7 +4,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/site_logo.jpg' }],
   ],
 
-  title: 'CodeSpace',
+  title: 'NoteSpace',
   description: 'Just some notes',
 
   themeConfig: {
